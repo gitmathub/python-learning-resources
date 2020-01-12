@@ -12,6 +12,7 @@ These notes were made while teaching programing for beginners in Python. The res
     - [PIP](#pip)
     - [Autoformatter](#autoformatter)
     - [Testing](#testing)
+    - [Jupyter Notebook](#jupyter-notebook)
   - [Python Language](#python-language)
   - [Programming](#programming)
   - [Python Libs](#python-libs)
@@ -86,6 +87,17 @@ You can use the `--help` option to learn about comand line parameters:
 /usr/bin/python3 -m pip install --help
 ```
 
+Put your user's directory with all python modules in your path. First learn where your directory is:
+```console
+$ /usr/bin/python3 -m site --user-base
+/Users/<your-user-name>/Library/Python/3.7
+```
+Your *bin* directory is in the path. So in this example: `/Users/<your-user-name>/Library/Python/3.7/bin`.
+Add this path to your PATH environment settings:
+```bash
+export PATH=$PATH:/Users/<your-user-name>/Library/Python/3.7/bin
+```
+
 ### Autoformatter
 Why using auto formatters?
 
@@ -115,6 +127,11 @@ I find them all not very satisfying in some cases when it comes to compact code.
 /usr/bin/python3 -m pip install -U pytest --user
 ```
 
+### Jupyter Notebook
+
+```bash
+/usr/bin/python3 -m pip install -U jupyter --user
+```
 
 ## Python Language
 
